@@ -18,7 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <main>
         <header>
-
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
@@ -32,92 +31,42 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/home.html">Home</a>
+                                    <a class="nav-link" href="/home.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/app/about.html">About Me</a>
+                                    <a class="nav-link" href="/app/about.html">About Me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/app/portfolio.html">Portfolio</a>
+                                    <a class="nav-link" href="/app/portfolio.html">Portfolio</a>
                                 </li>  
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/app/contact.html">Contact</a>
+                                    <a class="nav-link" href="/app/contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/app/resume.html">Resume</a>
+                                    <a class="nav-link" href="/app/resume.html">Resume</a>
                                 </li>                                                                            
-                            </ul>
+                            </ul>     
+                            <!-- Icons -->                   
+                            <!-- <ul class="navbar-nav d-flex flex-row">
+                                    
+                                <li class="nav-item me-3 me-lg-0">
+                                    <a class="nav-link" href="http://www.linkedin.com/"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>  
+                                <li class="nav-item me-3 me-lg-0">
+                                    <a class="nav-link" href="http://www.github.com/" rel="nofollow" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul> -->
                         </div>                     
                     </div>
                 </nav>                
-            </div>                  
-                    
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-                <div class="container-fluid">
-            
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand nav-link" routerLink="">
-                        <strong>Eliezer Rangel</strong>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarExample01">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" routerLink="about">About Me</a>
-                        </li>        
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="php" rel="nofollow">PHP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="csharp">C#</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="framework">FrameWorks</a>     
-                        </li>    
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="wp">WordPress</a>     
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="mobile">Mobile</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" routerLink="contact">Contact</a>          
-                        </li>
-                        </ul>
-                
-                        <ul class="navbar-nav d-flex flex-row">
-                        <!-- Icons -->        
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="http://www.linkedin.com/"
-                            target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>        
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="http://www.youtube.com/"rel="nofollow" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>        
-                        <li class="nav-item me-3 me-lg-0">
-                            <a class="nav-link" href="http://www.github.com/" rel="nofollow" target="_blank">
-                            <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Navbar -->
-
+            </div>     
         </header>
 
-        <!--Nav bar class background-->
-        <div id="intro" class="bg-image shadow-2-strong">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);"></div></div>
-        
         <div class="container">    
         
         <!--Section:  Who i am / why web development-->
@@ -127,9 +76,9 @@
                 <!-- image left side-->
                 <div class="d-flex justify-content-center">
                 <img
-                    src="https://acti.cl/wp-content/uploads/2019/11/Nuevo-perfil-informaticos.jpg"
+                    src="/Assets/photo1.jpg"
                     class="d-block rounded-5"
-                    style="width: 35em; height: auto;"
+                    style="width: 15em; height: auto;"
                     alt="..."
                 />
                 </div>            
@@ -137,13 +86,14 @@
             <div class="col-md-6 mb-2">            
                 <h4><strong>Who i am</strong></h4>
                 <p class="text-muted">
-                    My name is Eliezer dos Santos Rangel, I am currently finishing "professional training 
-                    in Web Developer & Mobile" which is being carried out at Cesae Digital - Porto. 
+                    My name is Eliezer Rangel, I am currently training "Specialist Technician in Information Systems Technologies and Programming"
+                    which is being carried out at ATEC - Porto. 
                     To complete this training path, I am looking for experience in a real work context.
                     Hobbies & Interests: Play soccer and volleyball; Play acoustic guitar.                 
                 </p>  
-                <h6><strong>Why Web Development?</strong></h6>   
+                <h6><strong>Why Information Systems Technologies and Programming?</strong></h6>   
                 <p class="text-muted">
+                    Explicar que vim da area de gestao....
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
                     eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
                     sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
@@ -152,54 +102,11 @@
             </div>
         </section>
         <!--Section: Who i am / why web development-->
-        
-        <!--Section: Cesae Digital -->
+
         <section class="border-bottom pb-4 mb-5 mt-3">
             <div class="row gx-5">
             <div class="col-md-6 mb-4">        
-                <h4><strong>Cesae Digital - Porto 2021</strong></h4>
-                <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-                    eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-                    sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
-                </p>  
-                <h6><strong>Career Change</strong></h6>   
-                <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-                    eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-                    sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis. 
-                </p>              
-            </div>          
-            <!-- image right side-->
-            <div class="col-md-6 mb-6">
-            <div class="d-flex justify-content-center">
-                <img
-                src="https://acti.cl/wp-content/uploads/2019/11/Nuevo-perfil-informaticos.jpg"
-                class="d-block rounded-5"
-                style="width: 30em; height: auto;"
-                alt="..."
-                />
-                </div>  
-            </div>  
-            </div>
-        </section>    
-        
-        <!--Section: Intership-->
-        <section class="border-bottom pb-4 mb-5 mt-5">
-            <div class="row gx-5">
-            <div class="col-md-6 mb-2">
-                <!-- image left side-->
-                <div class="d-flex justify-content-center">
-                <img
-                    src="https://acti.cl/wp-content/uploads/2019/11/Nuevo-perfil-informaticos.jpg"
-                    class="d-block rounded-5"
-                    style="width: 35em; height: auto;"
-                    alt="..."
-                />
-                </div>            
-            </div>      
-            <div class="col-md-6 mb-2">            
-                <h4><strong>Internship 2021</strong></h4>
+                <h4><strong>ATEC Academy - Porto 2023/2025</strong></h4>
                 <p class="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
                     eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
@@ -210,12 +117,82 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
                     eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
                     sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.               
-                </p>        
+                </p>              
+            </div>          
+            <!-- image right side-->
+            <div class="col-md-6 mb-6">
+            <div class="d-flex justify-content-center">
+                <img
+                src="/Assets/atec_logo2.jpg"
+                class="d-block rounded-5"
+                style="width: 35em; height: auto;"
+                alt="..."
+            />
+                </div>  
+            </div>  
             </div>
+        </section>    
+        
+        <!-- Cards -->   
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/Assets/voleyball.jpg"
+                  class="card-img" 
+                  alt="..."
+                  height="250em"
+                  width="150em"
+                />
+                
+                <div class="card-body">
+                  <h5 class="card-title">Desporto</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <!--Section: Intership -->
-        </div>  
+            <div class="col">
+              <div class="card">
+                <img
+                  src="Assets/photo5.jpg"
+                  class="card-img"
+                  alt="..."
+                  height="250em"
+                  width="150em"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Viagens</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/Assets/volunteer.jpg"
+                  class="card-img"
+                  alt="..."
+                  height="250em"
+                  width="150em"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Voluntariado</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a natural lead-in to
+                    additional content.This is a longer card with supporting text below as a natural lead-in
+                  </p>
+                </div>
+              </div> 
+          </div>  
+        </div>
+
+    </div>  
 
 
         <footer class="bg-light text-center text-lg-start" id="footer">
@@ -224,28 +201,7 @@
               <form action="">
                 <!--Grid row-->
                 <div class="row" style="justify-content: center;">
-                  <!--Grid column-->
-                  <div class="col-auto mb-4 mb-md-0">
-                    <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
-                  </div>
-                  <!--Grid column-->
-          
-                  <!--Grid column-->
-                  <div class="col-md-5 col-12 mb-4 mb-md-0">
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form5Example2" class="form-control" />
-                      <label class="form-label" for="form5Example2">Email address</label>
-                    </div>
-                  </div>
-                  <!--Grid column-->
-          
-                  <!--Grid column-->
-                  <div class="col-auto mb-4 mb-md-0">
-                    <!-- Submit button -->
-                    <button type="submit" id="bt_homepage" class="btn btn-primary mb-4">Subscribe</button>
-                  </div>
-                  <!--Grid column-->
+                  
                 </div>
                 <!--Grid row-->
               </form>
@@ -253,9 +209,8 @@
             <!-- Grid container -->
           
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2024 Copyright:
-              <a class="text-dark" href="">Developed by Eliezer Rangel</a>
+            <div class="text-center p-3" style="background-color: rgba(158, 158, 158, 0.2);">
+                <strong>© 2024 Copyright by Eliezer Rangel</strong>
             </div>
             <!-- Copyright -->
           </footer>
