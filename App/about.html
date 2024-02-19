@@ -7,14 +7,18 @@
     <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">  
     <!-- CDN --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/0b1888fa43.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </head>
 <body>
+  <script>   
+    setInterval(updateDateTime, 1000);
+    setInterval(getDateTime, 1000);
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <main>
         <header>
@@ -45,23 +49,23 @@
                           <li class="nav-item">
                               <a class="nav-link" href="/app/resume.html">Resume</a>
                           </li>                                                                            
-                      </ul>     
-                      <!-- Icons -->                   
-                      <!-- <ul class="navbar-nav d-flex flex-row">
-                              
-                          <li class="nav-item me-3 me-lg-0">
-                              <a class="nav-link" href="http://www.linkedin.com/"
-                              target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                              </a>
-                          </li>  
-                          <li class="nav-item me-3 me-lg-0">
-                              <a class="nav-link" href="http://www.github.com/" rel="nofollow" target="_blank">
-                              <i class="fab fa-github"></i>
-                              </a>
-                          </li>
-                      </ul> -->
-                  </div>                     
+                      </ul> 
+                  </div>  
+                  <!-- Icons -->                   
+                  <ul class="navbar-nav d-flex flex-row">                                    
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://pt.linkedin.com/in/eliezerangel"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>  
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://github.com/eliezerangel" rel="nofollow" target="_blank">
+                        <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="d-flex align-items-end" id="time">00:00:00</span>                     
               </div>
           </nav>                
       </div>          
@@ -256,30 +260,25 @@
             </div> 
         </div>  
       </div>
-
   
-      </div>  
-
-
-          <footer class="bg-light text-center text-lg-start" id="footer">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-              <form action="">
-                <!--Grid row-->
-                <div class="row" style="justify-content: center;">
-                  
-                </div>
-                <!--Grid row-->
-              </form>
+      </div>
+      <br>
+      <br>
+      <footer>
+        <div class="bg-dark text-secondary px-5 py-3 text-center container-fluid">
+          <div class="py-1">
+            <h1 class="display-5 fw-bold text-white">Software Developer</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-2" id="datetime"></p>
+              <p class="fs-5 mb-2">Technical Specialist in Network Management and Computer Systems</p>
+              <p class="fs-5 mb-4">© 2024 Copyright by Eliezer Rangel</p>                
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" id="top" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="topFunction()">TOP</button>                
+              </div>
             </div>
-            <!-- Grid container -->
-          
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(158, 158, 158, 0.2);">
-                <strong>© 2024 Copyright by Eliezer Rangel</strong>
-            </div>
-            <!-- Copyright -->
-          </footer>
+          </div>
+        </div>
+       </footer>
     </main>    
 </body>
 </html>

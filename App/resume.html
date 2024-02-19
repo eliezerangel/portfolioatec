@@ -9,12 +9,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/style.css">
     <!-- CDN --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/0b1888fa43.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </head>
 <body>
+    <script>  
+        setInterval(updateDateTime, 1000);
+        setInterval(getDateTime, 1000);
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <main>
         <header>
@@ -45,91 +51,334 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/app/resume.html">Resume</a>
                             </li>                                                                            
-                        </ul>     
-                        <!-- Icons -->                   
-                        <!-- <ul class="navbar-nav d-flex flex-row">
-                                
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link" href="http://www.linkedin.com/"
-                                target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>  
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link" href="http://www.github.com/" rel="nofollow" target="_blank">
-                                <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                        </ul> -->
-                    </div>                     
+                        </ul>                             
+                    </div>
+                     <!-- Icons -->                   
+                     <ul class="navbar-nav d-flex flex-row">                                    
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://pt.linkedin.com/in/eliezerangel"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>  
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://github.com/eliezerangel" rel="nofollow" target="_blank">
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="d-flex align-items-end" id="time">00:00:00</span>                     
                 </div>
             </nav>                
         </div>  
         </header>
             
-        <div class="container-fluid">
-          <div class="row" style="justify-content: center; margin-top: 50px; margin-block-end: 100px;">            
-            <div class="col-sm-4 mt-5">
-              <!-- Card -->
-              <div class="card rounded-5">
-                  <img
-                    src="../../assets/asset-background.jpg"
-                    class="card-img-top rounded-5"
-                    alt="..."
-                  />              
-              </div> 
+        <div class="container">
+
+            <!-- <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+            <section class="timeline_area section_padding_130">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-8 col-lg-6">
+                            <!-- Section Heading-->
+                            <div class="section_heading text-center">
+                                <br>
+                                <h6>Pofessional Experience</h6>                              
+                                <h3>A brief stories...</h3>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Timeline Area-->
+                            <div class="apland-timeline-area">
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>Currently</p>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-12 col-md-6 col-lg-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>OPTIGEST</h6>
+                                                    <p>Software Developer - Since 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Development of solutions in PHP</h6>
+                                                    <p>Support, anomalies and visual fixes
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Database</h6>
+                                                    <p>MySQL database</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>2021</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>LYNXIT</h6>
+                                                    <p>Software Developer - Trainee</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>PHP Framework Cube</h6>
+                                                    <p>Support, anomalies and visual fixes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Database</h6>
+                                                    <p>PostgreSQL database</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>2020</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>AUPPER</h6>
+                                                    <p>Sales Assistant</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>Expansion of the customer base and dissemination of new products</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>Planning and validation of new business proposals</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>2019</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>CÍRCULO DE LEITORES<br>BERTRANDCÍRCULO</h6>
+                                                    <p>Sales Inspector - Since 2016</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>Analysis of business statistics, application of work methods</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>After-sales quality control supervisor</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>2016</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>CÍRCULO DE LEITORES<br>BERTRANDCÍRCULO</h6>
+                                                    <p>Sales Assistant - Since 2013</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>Training and monitoring of new employees</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                <div class="timeline-text">
+                                                    <h6>Rules</h6>
+                                                    <p>Expansion of the customer base and dissemination of new products</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Timeline Content-->
+                                <div class="single-timeline-area">
+                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                        <p>2013</p>
+                                    </div>  
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>                              
+                                </div>
+                                <!-- Single Timeline Content-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <!-- Modal OPTIGEST -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">OPTIGEST</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="card text-bg-dark">
+                            <img src="https://www.optigest.net/www/PT/assets/img/opti.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                    
+                        <!-- <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="https://www.optigest.net/www/PT/assets/img/opti.png" class="img-fluid rounded-start" height="155px" width="200px" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
+
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                </div>
+                </div>
             </div>
-            <!--Card end-->            
-            <br>   
-            <!--Form contact-->  
-            <div class="col-sm-4 mb-5 mt-5">
-              <mdb-form-control>
-                  <input mdbInput type="text" id="typeText" class="form-control" />
-                  <label mdbLabel class="form-label" for="typeText">Name</label>
-              </mdb-form-control>
-                <br>
-              <mdb-form-control>
-                  <input mdbLabel type="email" id="typeEmail" class="form-control" />
-                  <label mdbInput class="form-label" for="typeEmail">Email</label>
-              </mdb-form-control>
-                <br>
-              <mdb-form-control>
-                <input mdbLabel type="phone" id="typePhoneNumber" class="form-control" />
-                <label mdbInput class="form-label" for="typePhoneNumber">Phone Number</label>
-              </mdb-form-control>
-                <br>
-              <mdb-form-control>
-                  <textarea mdbInput class="form-control" id="textAreaExample" rows="4"></textarea>
-                  <label mdbLabel class="form-label" for="textAreaExample">Message</label>
-              </mdb-form-control>
-                <br>
-              <div class="d-flex justify-content-end">
-              <button mdbRipple class="btn btn-primary" type="submit">Submit</button>
-              </div>
-            </div>        
-          </div>
-        </div>  
 
-
-        <footer class="bg-light text-center text-lg-start" id="footer">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-            <form action="">
-              <!--Grid row-->
-              <div class="row" style="justify-content: center;">
-                
+            </div>
+            <footer>
+              <div class="bg-dark text-secondary px-5 py-3 text-center container-fluid">
+                <div class="py-1">
+                  <h1 class="display-5 fw-bold text-white">Software Developer</h1>
+                  <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-2" id="datetime"></p>
+                    <p class="fs-5 mb-2">Technical Specialist in Network Management and Computer Systems</p>
+                    <p class="fs-5 mb-4">© 2024 Copyright by Eliezer Rangel</p>                
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                      <button type="button" id="top" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="topFunction()">TOP</button>                
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!--Grid row-->
-            </form>
-          </div>
-          <!-- Grid container -->
-        
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(158, 158, 158, 0.2);">
-              <strong>© 2024 Copyright by Eliezer Rangel</strong>
-          </div>
-          <!-- Copyright -->
-        </footer>
+             </footer>
     </main>    
 </body>
 </html>
