@@ -9,8 +9,8 @@ function updateDateTime() {
     let currentMinute =  currentTime.getUTCMinutes().toString().padStart(2, '0');
     let currentSecond =  currentTime.getSeconds().toString().padStart(2, '0');
 
-    let hour = currentHour+':'+currentMinute+':'+currentSecond;   
-    document.querySelector('#time').textContent = hour;
+    //let hour = currentHour+':'+currentMinute+':'+currentSecond;   
+    //document.querySelector('#time').textContent = hour;
 } 
 
 
@@ -47,7 +47,7 @@ function openModal(){
 function recarregarPagina() {
     setTimeout(function() {
         location.reload(); // recarrega a página
-    }, 3000); // 2000 milissegundos = 2 segundos
+    }, 4000); // 4000 milissegundos = 4 segundos
 }
 
 function showMessage(event){    

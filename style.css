@@ -118,3 +118,21 @@ body {
 .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
     color: #3f43fd;
 }
+
+.navbar {
+    position: fixed; /* Fixa a barra de navegação no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+  }
+  
+  .content {
+    margin-top: 80px; /* Para deixar espaço abaixo da barra de navegação */
+    /* Adicione margem superior equivalente à altura da barra de navegação */
+    padding: 20px;
+  }
+  
+  /* Opcional: Adicione um efeito de sombra para indicar que a barra de navegação está fixada */
+  .navbar.fixed-top {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
