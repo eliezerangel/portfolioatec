@@ -1,3 +1,2 @@
-Teste
 
 index.html
