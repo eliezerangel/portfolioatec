@@ -136,3 +136,15 @@ body {
   .navbar.fixed-top {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+/* .nav-item .nav-link:hover i {
+    color: blue;
+} */
+
+.linkedin:hover i {
+    color: blue;
+}
+
+.github:hover i {
+    color: black;
+}
