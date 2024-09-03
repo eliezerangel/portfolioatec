@@ -142,9 +142,9 @@ body {
 } */
 
 .linkedin:hover i {
-    color: blue;
+    color: rgb(3, 42, 173);
 }
 
 .github:hover i {
-    color: black;
+    color: rgb(202, 56, 2);
 }
