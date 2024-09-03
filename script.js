@@ -56,10 +56,11 @@ function showMessage(event){
     var nome   = document.getElementById("name").value;
     var alerta = document.getElementById("alert_success");
     // Substitui o conteúdo usando innerHTML
-    alerta.innerHTML = "Olá "+nome+"! Sua mensagem foi enviada com sucesso.";
+    alerta.innerHTML = "Olá "+nome+"! Sua mensagem foi enviada com sucesso.";   
 
     document.getElementById("alert_success").removeAttribute("hidden");
     topFunction();
+
     // Chama a função para recarregar a página após dois segundos
-    recarregarPagina(); 
+    recarregarPagina();     
 }
