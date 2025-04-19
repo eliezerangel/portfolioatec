@@ -64,3 +64,20 @@ function showMessage(event){
     // Chama a função para recarregar a página após dois segundos
     recarregarPagina();     
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(navItem => {
+        const navLink = navItem.querySelector('.nav-link');
+
+        navItem.addEventListener('mouseenter', function() {
+        navLink.classList.add('heartbeat');
+        });
+
+        navItem.addEventListener('mouseleave', function() {
+        navLink.classList.remove('heartbeat');
+        });
+    });
+});
