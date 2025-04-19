@@ -54,7 +54,7 @@ body {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: #677dfa; /*  #f1c40f; */
+    background-color: #05b18b; /*  #677dfa; #f1c40f; */
     content: "";
     top: 50%;
     right: 26px;
@@ -89,7 +89,7 @@ body {
     transition-duration: 500ms;
     width: 30px;
     height: 30px;
-    background-color: #677dfa; /*  #f1c40f; */
+    background-color: #05b18b; /*  #f1c40f;  #677dfa */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
     flex: 0 0 30px;
@@ -112,11 +112,11 @@ body {
 }
 .single-timeline-area .single-timeline-content:hover .timeline-icon,
 .single-timeline-area .single-timeline-content:focus .timeline-icon {
-    background-color: #020710;
+    background-color: #0481b3;  /* color: #020710; */
 }
 .single-timeline-area .single-timeline-content:hover .timeline-text h6,
 .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
-    color: #3f43fd;
+    color: #0481b3;  /* color: #3f43fd; */
 }
 
 .navbar {
