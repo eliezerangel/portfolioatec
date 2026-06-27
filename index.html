@@ -3,247 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliezer Rangel | Home</title>
-    <link rel="shortcut icon" type="image/x-icon"     href="Assets/favicon.ico">
-    <link rel="apple-touch-icon"      sizes="180x180" href="Assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"   href="Assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"   href="Assets/favicon-16x16.png">
+    <title>Eliezer Rangel | Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://kit.fontawesome.com/0b1888fa43.js" crossorigin="anonymous"></script>  
-    <script src="script.js"></script> 
+    <script src="https://kit.fontawesome.com/0b1888fa43.js" crossorigin="anonymous"></script>
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <script>    
-    setInterval(updateDateTime, 1000);
-    setInterval(getDateTime, 1000);
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <main>
-    <header>
-      <div class="container-fluid bg-pan-right">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a href="index.html" class="navbar-brand nav-link" routerLink="">
-              <img src="Assets/asset-homepage1.png" alt="" height="30em" width="30em">
-              <strong>Eliezer Rangel</strong> 
-            </a>                        
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>                          
-            </button>    
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">                  
+
+<header>
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top bg-pan-right">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand nav-link">
+                <img src="Assets/asset-homepage1.png" alt="Eliezer Rangel logo" height="30" width="30">
+                <strong class="navcolor">Eliezer Rangel</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" data-i18n-attr="aria-label:nav.menuToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><strong class="navcolor">Home</strong></a>
+                        <a class="nav-link" href="#home"><strong class="navcolor" data-i18n="nav.home"></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="App/update.html"><strong class="navcolor">About Me</strong></a>
+                        <a class="nav-link" href="#about"><strong class="navcolor" data-i18n="nav.about"></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="App/portfolio.html"><strong class="navcolor">Portfolio</strong></a>
-                    </li>                  
+                        <a class="nav-link" href="#portfolio"><strong class="navcolor" data-i18n="nav.portfolio"></strong></a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="App/resume.html"><strong class="navcolor">Resume</strong></a>
-                    </li>                                                                              
-                  </ul> 
-              </div>               
-              <ul class="navbar-nav d-flex flex-row">                                    
-                  <li class="nav-item me-3 me-lg-0">
-                      <a class="nav-link linkedin" href="https://pt.linkedin.com/in/eliezerangel" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                  </li>  
-                  <li class="nav-item me-3 me-lg-0">
-                      <a class="nav-link github"   href="https://github.com/eliezerangel" rel="nofollow" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-                  </li>
-              </ul>                    
-          </div>
-        </nav>                
-      </div>     
-    </header>
+                        <a class="nav-link" href="#resume"><strong class="navcolor" data-i18n="nav.resume"></strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://pt.linkedin.com/in/eliezerangel" target="_blank" rel="noopener noreferrer" title="LinkedIn"><strong class="navcolor" data-i18n="nav.contact"></strong></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item me-3 me-lg-0">
+                    <button type="button" id="langToggle" class="nav-link lang-toggle" data-i18n-attr="aria-label:nav.toggleLang;title:nav.toggleLang">
+                        <i class="bi bi-globe2" aria-hidden="true"></i>
+                        <span id="langLabel" class="lang-label">EN</span>
+                    </button>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link linkedin" href="https://pt.linkedin.com/in/eliezerangel" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                    <a class="nav-link github" href="https://github.com/eliezerangel" rel="nofollow noopener noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-    <div class="container">   
+<main>
 
-      <div class="px-4 py-3 my-2 text-center">  
-        <h1 class="display-5 fw-bold text-body-emphasis">Software Developer</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-            I have been a software developer since 2021, and PHP and Laravel has been a significant part of my toolkit. Over the years, I've gained practical experience in developing and maintaining various PHP-based applications.
-          </p>
-        </div>
-      </div>
-   
-      <section class="border-bottom pb-4 mb-5 mt-2">
-        <div class="row gx-5">
-          <div class="col-md-4 mb-2">
-            <div class="d-flex justify-content-md-end justify-content-center">
-                <img src="Assets/photo1.jpg" class="d-block rounded-5" style="width: 15em; height: auto;" alt="..." />              
+    <!-- HOME -->
+    <section id="home" class="page-section page-section-hero">
+        <div class="container">
+            <div class="px-4 py-5 text-center reveal">
+                <img src="Assets/photo1.jpg" class="d-block rounded-5 mx-auto mb-4 profile-photo" alt="Eliezer Rangel">
+                <h1 class="display-5 fw-bold text-body-emphasis" data-i18n="home.title"></h1>
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead mb-4" data-i18n="home.lead">                       
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#portfolio" class="btn btn-primary btn-lg" data-i18n="home.btnPortfolio"></a>
+                        <a href="https://pt.linkedin.com/in/eliezerangel" class="btn btn-outline-secondary btn-lg" data-i18n="home.btnContact" target="_blank" rel="noopener noreferrer" title="LinkedIn"></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="col-md-6 mb-2">            
-              <h4><strong>Who I am</strong></h4>
-              <p class="text-muted" style="text-align: justify;">
-                My name is Eliezer Rangel, and I am 
-                "Specialist Technician in Information Systems Technologies and Programming" at ATEC - Porto. 
-                My primary objective is to gain new knowledge following my Level 5 qualification, 
-                thereby advancing my career as a software and web developer.             
-              </p>
-              <br>  
-              <h6><strong>Why Information Systems Technologies and Programming?</strong></h6>   
-              <p class="text-muted" style="text-align: justify;">
-                I chose this course for two main reasons: 
-                firstly, due to the strong reputation of the Technology and IT sector concerning the 
-                UFCDs included in the curriculum; and secondly, because ATEC is a renowned institution in this field.
-              </p>        
-          </div>    
         </div>
-      </section>
+    </section>
 
-      <section class="border-bottom pb-4 mb-5 mt-5">
-        <div class="row gx-5">              
-          <div class="col-md-6 mb-4" >        
-            <h4><strong>ATEC Academy - Porto 2023/2025</strong></h4>
-            <p class="text-muted" style="text-align: justify;">
-              Information systems technologies and programming technicians build computer 
-              applications with a view to solving business or other problems. 
-              Implements information systems based on Web technologies, computing systems and mobile devices. 
-              Designs systems integration architectures.                          
-            </p>  
-            <h6><strong>Acquired Skills</strong></h6>   
-            <p class="text-muted" style="text-align: justify;">
-              Build computer applications for managing information systems.
-              Design and manage a database with a view to solving business or other problems and supporting the respective information systems.
-              Implement information systems based on Web technologies, through the use of classic computing systems.          
-            </p>              
-          </div>         
+    <!-- ABOUT -->
+    <section id="about" class="page-section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2 data-i18n="about.title"></h2>
+                <div class="line"></div>
+            </div>
 
-          <div class="col-md-6 mb-6">
-            <div class="d-flex justify-content-start">
-              <img src="Assets/atec_logo2.jpg" class="d-block rounded-5" style="width: 30em; height: auto;" alt="Atec" />
-            </div>  
-          </div>  
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex justify-content-md-end justify-content-center">
+                        <img src="Assets/photo1.jpg" class="d-block rounded-5 profile-photo" alt="Eliezer Rangel portrait">
+                    </div>
+                </div>
+                <div class="col-md-8 mb-2">
+                    <h4><strong data-i18n="about.whoTitle"></strong></h4>
+                    <p class="text-muted text-justify" data-i18n="about.whoText"></p>
+                    <h6 class="mt-3"><strong data-i18n="about.whyTitle"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="about.whyText"></p>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4">
+                    <h4><strong data-i18n="about.workTitle"></strong></h4>
+                    <p class="text-muted text-justify" data-i18n="about.workText">                       
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/optigest.png" class="d-block rounded-5 img-medium" alt="Optigest">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4 order-md-2">
+                    <h4><strong data-i18n="about.uabTitle"></strong></h4>
+                    <p class="text-muted text-justify" data-i18n="about.uabText"></p>
+                    <h6><strong data-i18n="about.skillsUAbTitle"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="about.skillsUAbText">                       
+                </div>
+                <div class="col-md-6 mb-4 order-md-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/uab_image_one.jpg" class="d-block rounded-5 img-large" alt="Universidade Aberta logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4">
+                    <h4><strong data-i18n="about.atecTitle"></strong></h4>
+                    <p class="text-muted text-justify" data-i18n="about.atecText"></p>
+                    <h6><strong data-i18n="about.skillsTitle"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="about.skillsText"></p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/atec_logo2.jpg" class="d-block rounded-5 img-large" alt="ATEC Academy logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 reveal">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/voleyball.jpg" class="card-img-top card-img-fixed" alt="Sports">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="about.sportsTitle"></h5>
+                            <p class="card-text" data-i18n="about.sportsText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/france1.1.JPG" class="card-img-top card-img-fixed" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="about.travelTitle"></h5>
+                            <p class="card-text" data-i18n="about.travelText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/volunteer.jpg" class="card-img-top card-img-fixed" alt="Volunteering">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="about.volunteerTitle"></h5>
+                            <p class="card-text" data-i18n="about.volunteerText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 reveal">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/php1.jpg" class="card-img-top card-img-fixed" alt="PHP">
+                        <div class="card-body">
+                            <h5 class="card-title">PHP</h5>
+                            <p class="card-text" data-i18n="about.phpText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/laravel_logo.jpg" class="card-img-top card-img-fixed" alt="Laravel">
+                        <div class="card-body">
+                            <h5 class="card-title">Laravel</h5>
+                            <p class="card-text" data-i18n="about.laravelText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/c++.png" class="card-img-top card-img-fixed" alt="C++">
+                        <div class="card-body">
+                            <h5 class="card-title">C++</h5>
+                            <p class="card-text" data-i18n="about.cppText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>    
-   
-      <section class="border-bottom pb-4 mb-5 mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="Assets/voleyball.jpg" class="card-img" alt="..." height="250em" width="150em" />                
-              <div class="card-body">
-                <h5 class="card-title">Sports</h5>
-                <p class="card-text">
-                  Playing sports is one of my passions, especially when I can enjoy it outdoors. 
-                  My favorites are volleyball, football, and hiking.
-                </p>
-              </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="page-section page-section-alt">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2 data-i18n="portfolio.title"></h2>
+                <div class="line"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="Assets/france1.1.JPG" class="card-img" alt="..." height="250em" width="150em" />
-              <div class="card-body">
-                <h5 class="card-title">Travel</h5>
-                <p class="card-text">
-                  Exploring the world goes beyond visiting big cities; I love diving into local cultures, discovering the charm of small towns and villages.
-                </p>
-              </div>
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4">
+                    <h4><strong data-i18n="portfolio.cppTitle"></strong></h4>
+                    <p class="text-muted" data-i18n="portfolio.cppIntro"></p>
+                    <h6><strong data-i18n="common.description"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="portfolio.cppDesc"></p>
+                    <h6><strong data-i18n="common.technologies"></strong></h6>
+                    <p class="text-muted" data-i18n="portfolio.cppTech"></p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/c++1.png" class="d-block rounded-5 img-medium" alt="C++ project">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="Assets/volunteer.jpg" class="card-img"  alt="..." height="250em" width="150em" />
-              <div class="card-body">
-                <h5 class="card-title">Volunteering</h5>
-                <p class="card-text">
-                  Participating in volunteer activities is something I deeply value, especially when I can be physically present and actively contribute. 
-                </p>
-              </div>
-            </div> 
-          </div>  
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4 order-md-2">
+                    <h4><strong data-i18n="portfolio.phpTitle"></strong></h4>
+                    <p class="text-muted" data-i18n="portfolio.phpIntro"></p>
+                    <h6><strong data-i18n="common.description"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="portfolio.phpDesc"></p>
+                    <h6><strong data-i18n="common.technologies"></strong></h6>
+                    <p class="text-muted" data-i18n="portfolio.phpTech"></p>
+                </div>
+                <div class="col-md-6 mb-4 order-md-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/php1.jpg" class="d-block rounded-5 img-large" alt="PHP project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 reveal">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/intership4.png" class="card-img-top card-img-fixed" alt="E-mail project">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="portfolio.emailTitle"></h5>
+                            <p class="card-text" data-i18n="portfolio.emailText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/intership5.jpg" class="card-img-top card-img-fixed" alt="Validation project">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="portfolio.validationTitle"></h5>
+                            <p class="card-text" data-i18n="portfolio.validationText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="Assets/intership4.png" class="card-img-top card-img-fixed" alt="Login project">
+                        <div class="card-body">
+                            <h5 class="card-title" data-i18n="portfolio.loginTitle"></h5>
+                            <p class="card-text" data-i18n="portfolio.loginText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center border-bottom pb-4 mb-5 reveal">
+                <div class="col-md-6 mb-4">
+                    <h4><strong data-i18n="portfolio.angularTitle"></strong></h4>
+                    <p class="text-muted" data-i18n="portfolio.angularIntro"></p>
+                    <h6><strong data-i18n="common.description"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="portfolio.angularDesc"></p>
+                    <h6><strong data-i18n="common.technologies"></strong></h6>
+                    <p class="text-muted" data-i18n="portfolio.angularTech"></p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/angular.png" class="d-block rounded-5 img-medium" alt="Angular project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center reveal">
+                <div class="col-md-6 mb-4 order-md-2">
+                    <h4><strong data-i18n="portfolio.laravelTitle"></strong></h4>
+                    <p class="text-muted" data-i18n="portfolio.laravelIntro"></p>
+                    <h6><strong data-i18n="common.description"></strong></h6>
+                    <p class="text-muted text-justify" data-i18n="portfolio.laravelDesc"></p>
+                    <h6><strong data-i18n="common.technologies"></strong></h6>
+                    <p class="text-muted" data-i18n="portfolio.laravelTech"></p>
+                </div>
+                <div class="col-md-6 mb-4 order-md-1">
+                    <div class="d-flex justify-content-center">
+                        <img src="Assets/laravel-logo2.png" class="d-block rounded-5 img-large" alt="Laravel project">
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-      </section>
- 
-      <section class="border-bottom pb-4 mb-5 mt-5">
-        <div class="row gx-5">
-          <!-- image right side-->
-          <div class="col-md-6 mb-6">
-            <div class="d-flex justify-content-start">
-              <img src="Assets/optigest.png" class="d-block rounded-5" style="width: 20em; height: auto;" alt="Optigest" />
-            </div>  
-          </div>          
-          <div class="col-md-6 mb-4" >        
-            <h4><strong>Sofware Developer - Porto 2022/Currently</strong></h4>
-            <p class="text-muted" style="text-align: justify;">
-              As a software developer, my primary role is to design and develop solutions within applications to meet the needs of users and the business. 
-              This involves not only building new features but also implementing continuous improvements to optimize performance and user experience. 
-              I work on fixing bugs and addressing any issues that arise, ensuring that the application runs smoothly and efficiently. 
-              My focus is on delivering high-quality code that enhances functionality while maintaining the flexibility to adapt to evolving requirements.                         
-            </p>   
-          </div>   
-        </div>  
-      </section>  
- 
-      <section class="border-bottom pb-4 mb-5 mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="Assets/php1.jpg" class="card-img" alt="..." height="250em" width="150em" />                
-              <div class="card-body">
-                <h5 class="card-title">PHP</h5>
-                <p class="card-text">
-                  I have been a software developer since 2021, and PHP has been a significant part of my toolkit. 
-                  Over the years, I've gained practical experience in developing and maintaining various PHP-based applications.
-                </p>
-              </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="page-section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h6 class="text-uppercase text-muted mb-1" data-i18n="resume.subtitle"></h6>
+                <h2 data-i18n="resume.title"></h2>
+                <div class="line"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="Assets/laravel_logo.jpg" class="card-img" alt="..." height="250em" width="150em"/>
-              <div class="card-body">
-                <h5 class="card-title">Laravel</h5>
-                <p class="card-text">            
-                  This has allowed me to build more structured and efficient web applications following its MVC architecture. 
-                  I have experience in utilizing Laravel's features for various project requirements."
-                </p>
-              </div>
+
+            <div class="timeline_area section_padding_130 reveal">
+                <div class="apland-timeline-area">
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p data-i18n="resume.currently"></p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>OPTIGEST</h6>
+                                        <p data-i18n="resume.optigestRole"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.phpDev"></h6>
+                                        <p data-i18n="resume.phpDevDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.database"></h6>
+                                        <p data-i18n="resume.mysql"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p>2023 — 2025</p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>ATEC</h6>
+                                        <p data-i18n="resume.atecRole"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.buildApps"></h6>
+                                        <p data-i18n="resume.buildAppsDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.implSystems"></h6>
+                                        <p data-i18n="resume.implSystemsDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p>2021</p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>LYNXIT</h6>
+                                        <p data-i18n="resume.lynxitRole"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.phpCube"></h6>
+                                        <p data-i18n="resume.phpCubeDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.database"></h6>
+                                        <p data-i18n="resume.postgresql"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p>2020 — 2021</p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>CESAE</h6>
+                                        <p data-i18n="resume.cesaeRole"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.webApps"></h6>
+                                        <p data-i18n="resume.webAppsDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.mobileApps"></h6>
+                                        <p data-i18n="resume.mobileAppsDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p>2020</p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>AUPPER</h6>
+                                        <p data-i18n="resume.salesAssistant"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.expansion"></h6>
+                                        <p data-i18n="resume.expansionDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.planning"></h6>
+                                        <p data-i18n="resume.planningDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                        <div class="timeline-date"><p>2013 — 2019</p></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6>CÍRCULO DE LEITORES / BERTRANDCÍRCULO</h6>
+                                        <p data-i18n="resume.circuloRole"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.training"></h6>
+                                        <p data-i18n="resume.trainingDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-timeline-content d-flex">
+                                    <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 data-i18n="resume.quality"></h6>
+                                        <p data-i18n="resume.qualityDesc"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="Assets/c++.png" class="card-img"  alt="..." height="250em" width="150em"/>
-              <div class="card-body">
-                <h5 class="card-title">C++</h5>
-                <p class="card-text">
-                  My recent educational background provided a strong foundation in C++.
-                  This fundamental knowledge has been invaluable in understanding core programming concepts and problem-solving techniques.            
-                </p>
-              </div>
-            </div> 
-          </div>  
         </div>
-        <br>
-      </section> 
-      <br>
+    </section>
+</main>
+
+<footer>
+    <div class="row bg-dark text-secondary px-5 py-3 container-fluid">
+        <div class="col-lg-11 text-center">
+            <p class="fs-6 mb-2" id="datetime"></p>
+            <p class="fs-5 mb-4">
+                <span id="currentYear"></span> <span data-i18n="footer.copyright"></span>
+            </p>
+        </div>
+        <div class="col-lg-1">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" id="top" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="topFunction()" data-i18n="footer.top">TOP</button>
+            </div>
+        </div>
     </div>
+</footer>
 
-    <footer>
-      <div class="row bg-dark text-secondary px-5 py-3 container-fluid">
-          <div class="col-lg-11 text-center">
-              <br>
-              <p class="fs-6 mb-2" id="datetime"></p>
-              <p class="fs-5 mb-4">© 2025 Copyright by Eliezer Rangel</p>    
-          </div>
-          <div class="col-lg-1">
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <button type="button" id="top" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="topFunction()">TOP</button>                
-              </div>
-          </div>
-      </div>
-    </footer>
-  </main>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

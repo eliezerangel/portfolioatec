@@ -1,5 +1,129 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 body {
-    margin-top: 20px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.page-section {
+    padding: 5rem 0;
+}
+
+.page-section-hero {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.page-section-alt {
+    background-color: #f8f9fa;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading .line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #cc6aa5, #3e91cc, #2dcca7);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.profile-photo {
+    width: 15em;
+    height: auto;
+}
+
+.img-medium {
+    width: 15em;
+    height: auto;
+    max-width: 100%;
+}
+
+.img-large {
+    width: 30em;
+    height: auto;
+    max-width: 100%;
+}
+
+.card-img-fixed {
+    height: 220px;
+    object-fit: cover;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#mainNav .nav-link {
+    position: relative;
+    transition: opacity 0.2s ease;
+}
+
+#mainNav .nav-link.active {
+    opacity: 1;
+}
+
+#mainNav .nav-link.active strong.navcolor {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2px;
+}
+
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.lang-toggle .lang-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
 }
 .timeline_area {
     position: relative;
@@ -120,22 +244,10 @@ body {
 }
 
 .navbar {
-    position: fixed; /* Fixa a barra de navegação no topo */
     width: 100%;
-    top: 0;
-    z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
-  }
-  
-  .content {
-    margin-top: 80px; /* Para deixar espaço abaixo da barra de navegação */
-    /* Adicione margem superior equivalente à altura da barra de navegação */
-    padding: 20px;
-  }
-  
-  /* Opcional: Adicione um efeito de sombra para indicar que a barra de navegação está fixada */
-  .navbar.fixed-top {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
 /*.nav-item .nav-link:hover i {
     heartbeat
